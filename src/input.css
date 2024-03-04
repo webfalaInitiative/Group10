@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+
+html, body{
+    @apply mx-auto
+}
+
+@tailwind utilities;
