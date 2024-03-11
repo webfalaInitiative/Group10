@@ -545,6 +545,12 @@ video {
 }
 
 html, body {
-  margin-left: auto;
-  margin-right: auto;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 5.12rem;
+  padding-right: 5.12rem;
+}
+
+*{
+  box-sizing: border-box;
 }

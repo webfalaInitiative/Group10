@@ -2,7 +2,13 @@
 @tailwind components;
 
 html, body{
-    @apply mx-auto
+    @apply px-[5.12rem] bg-[white];
 }
+
+*{
+    box-sizing: border-box;
+}
+
+
 
 @tailwind utilities;
