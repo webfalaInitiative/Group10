@@ -9,6 +9,20 @@ html, body{
     box-sizing: border-box;
 }
 
+.show-menu{
+    transform: translateY(0);
+}
+
+.menu{
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+}
+
 
 
 @tailwind utilities;
