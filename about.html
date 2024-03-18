@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./src/output.css">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="px-[5.12rem]">
-    <nav class="mt-[2rem] justify-between lg:flex ">
-        <img class="" src="./images/logo.svg" alt="logo" alt="">
-        <div class="space-x-[4rem] justify-end ml-[14.4rem] py-[1.28rem]">
+<body class="lg:px-[5.12rem]">
+    <nav class="lg:mt-[2rem] mt-[0.2rem] justify-between lg:flex ">
+        <img class="lg:w-fit w-[14.3rem]" src="./images/logo.svg" alt="logo" alt="">
+        <div class="space-x-[4rem] justify-end ml-[14.4rem] py-[1.28rem] lg:flex hidden">
         <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="home.html">Home</a></span>
         <span class="font-normal text-[#9B06FE] active:text-[#9B06FE] "><a href="#">About Us</a></span>
         <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="support.html">Support</a></span>
@@ -18,40 +18,63 @@
         <span class="ml-[11.6rem]"><a href="contact.html"><button class="w-[10.6rem] h-[3.12rem] bg-[#9B06FE] rounded-[5.25rem] text-white font-normal">Contact Us</button></a></span>
         </div>
     </nav>
+    <!--Mobile nav-->
+    <div class="menu p-6 md:p-0 lg:hidden flex md:flex-row flex-col absolute md:relative top-0 left-0 bg-white md:bg-transparent md:mx-[1.5rem]">
+        <span class="font-normal text-[#9B06FE] active:text-[#9B06FE]"><a href="home.html">Home</a></span>
+        <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="about.html">About Us</a></span>
+        <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="support.html">Support</a></span>
+        <!-- <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="#">Sign Up</a></span> -->
+        <span class=""><a href="contact.html"><button class="w-[10.6rem] h-[3.12rem] bg-[#9B06FE] rounded-[5.25rem] text-white font-normal">Contact Us</button></a></span>
+    </div>
+    <button class="lg:hidden hamburger">
+        <img src="./images/menuicon.svg" alt="menu icon" class="menu-icon w-[2rem] h-[2rem]">
+        <img src="./images/close.svg" alt="close icon" class="close-icon hidden w-[2rem] h-[2rem]">
+    </button>
 <!--Hero Section-->
-    <div class="mt-[2.5rem] bg-[url('../images/aboutface.svg')] h-[35rem] px-[2rem] rounded-[1.5rem]">
-        <h2 class="text-4xl font-bold text-center pt-[5rem] text-white">SafeWomen Initiatives</h2>
-        <p class="text-3xl text-center mt-[8rem] px-[5rem] text-white">Welcome to SafeWomen Initiatives, a digital platform dedicated to shedding light on the pervasive issue of sexual and gender-based violence (SGBV) and fostering empowerment through education, support, and advocacy.</p>
-        <!-- <img class="mt-[1.5rem] h-[40rem]" src="./images/aboutface.svg" alt=""> -->
-        <!-- <button class="bg-[#9B06FE] text-white w-[10.6rem] h-[3.12rem] rounded-[5.25rem] mt-[3rem]"><a href="#">Learn More</a></button> -->
+    <div class="mt-[2.5rem] h-[35rem] px-[2rem] rounded-[1.5rem] max-md:hidden">
+        <img class=" " src="./images/aboutface.svg" alt="">
+    </div>
+<!--Mobilehero-->
+    <div class="mt-[4rem] h-[25rem]px-[0.9rem] w-[20.4rem] lg:hidden lg:mx-0 mx-[1.5rem]">
+        <img src="./images/mobileaboutface.svg" alt="">
     </div>
 <!--Mission-->
-    <section class="flex mt-[5.25rem] justify-between items-center">
-        <div class="w-[32.3rem]">
-             <h2 class="font-bold text-3xl">Our Mission</h2>
-             <p class="mt-[1rem] text-2xl text-justify">At SafeWomen Initiatives, our mission is to break the cycle of silence and stigma surrounding SGBV by providing accessible resources, 
+    <section class="lg:flex lg:mt-[6rem] mt-[5rem] justify-between items-center lg:mx-0 mx-[1.5rem]">
+        <div class="lg:w-[32.3rem] w-[19.2rem]">
+             <h2 class="font-bold lg:text-3xl text-[1.5rem]">Our Mission</h2>
+             <p class="lg:mt-[1rem] mt-[0.9rem] lg:text-2xl text-[0.9rem] text-justify">At SafeWomen Initiatives, our mission is to break the cycle of silence and stigma surrounding SGBV by providing accessible resources, 
                 fostering community dialogue, and advocating for systemic change. </p>
         
              <!-- <button class="bg-[#9B06FE] text-white w-[10.6rem] h-[3.12rem] rounded-[5.25rem] mt-[5rem]"><a href="#">Read More</a></button> -->
             </div>
     
-        <div class=" w-[32.3rem]">
-            <img src="./images/stop.svg" alt="">
+        <div class=" lg:mt-[6rem] mt-[2.5rem]">
+            <img class="lg:w-[32.3rem] w-[20.4rem]"  src="./images/stop.svg" alt="">
         </div>
     </section>
     <!--Vision-->
-    <section class="flex mt-[5.25rem] justify-between items-center">
-        <div class=" w-[32.3rem]">
+    <section class="lg:flex mt-[5.25rem] justify-between items-center lg:mx-0 mx-[1.5rem]">
+        <div class=" w-[32.3rem] max-md:hidden">
             <img src="./images/vision.svg" alt="">
         </div>
-        
-        <div class="w-[32.3rem]">
-             <h2 class="font-bold text-3xl">Our vision</h2>
-             <p class="mt-[1rem] text-2xl text-justify">Create a world where gender-based violence is not tolerated and survivors are empowered and supported</p>
+
+        <div class="w-[32.3rem] max-md:hidden">
+            <h2 class="font-bold text-3xl">Our vision</h2>
+            <p class="mt-[1rem] text-2xl text-justify">Create a world where gender-based violence is not tolerated and survivors are empowered and supported</p>
+       </div>
+    <!--mobile/vision img-->
+    <div class="w-[19.2rem] lg:hidden">
+        <h2 class="font-bold text-[1.5rem]">Our vision</h2>
+        <p class="mt-[0.9rem] text-[0.9rem] text-justify">Create a world where gender-based violence is not tolerated and survivors are empowered and supported</p>
+   </div>
+
+        <div class=" w-[20.4rem] mt-[2.5rem] lg:hidden">
+            <img src="./images/vision.svg" alt="">
         </div>
+         
     </section>
 <!--The Team-->
-    <div class="mt-[5.25rem] bg-[#F7F9F9] rounded-[1.88rem]">
+    <div class="mt-[5.25rem] bg-[#F7F9F9] rounded-[1.88rem] max-md:hidden">
         <h3  class="font-bold text-3xl text-center mt-[1.5rem] text-[#9B06FE]">Our Team</h3>
            <p class="py-[1rem] text-xl text-center">Behind SafeWomen Initiatives is a dedicated team of individuals who bring a diverse range of experiences, expertise, and perspectives to our work. </p> 
         <div class="flex justify-between mx-[1rem]">
@@ -70,8 +93,35 @@
 
             </div>
     </div>
+<!--mobile team-->
+    <div class="lg:hidden mx-[1.5rem] w-[19.2rem] ">
+            <div>
+                <h3  class="font-bold text-[1.5rem] text-center mt-[1.5rem] text-[#9B06FE]">Our Team</h3>
+                <p class="text-[0.9rem] mt-[0.9rem] text-center">Behind SafeWomen Initiatives is a dedicated 
+                    team of individuals who bring a diverse range of experiences, expertise, and perspectives to our work. </p> 
+            </div>
+
+
+        <div class="bg-[#F7F9F9] w-[20.3rem]  mt-[2.5rem] p-[0.9rem] rounded-[0.93rem]">
+            <img src="./images/founded.svg" alt="" class="w-[15rem]">
+            <p  class="text-justify text-[0.9rem]">As the visionary behind SafeHer she is driven by a personal commitment to social justice and a desire to create positive change in the world. With a background in advocacy 
+                and community organizing, she brings leadership, compassion, and unwavering determination to our mission.</p>
+        </div>
+
+        <div class="bg-[#F7F9F9] w-[20.3rem]  mt-[2.5rem] p-[0.9rem] rounded-[0.93rem]">
+            <img src="./images/manager.svg" alt="" class="w-[15rem]">
+                    <p class="text-justify text-[0.9rem]">Responsible for curating and creating impactful content for our website and social media platform she is dedicated to amplifying the voices of 
+                        survivors and raising awareness about the complexities of SGBV, she brings creativity, empathy, and a keen eye for detail to our team.</p>
+        </div>
+
+        <div class="bg-[#F7F9F9] w-[20.3rem]  mt-[2.5rem] p-[0.9rem] rounded-[0.93rem]">
+            <img src="./images/advocacy.svg" alt="" class="w-[15rem]">
+                    <p class="text-justify text-[0.9rem]">Leading our advocacy efforts and strategic partnerships, she is passionate about driving systemic change 
+                        to end SGBV and promote gender equality. With experience in policy analysis and grassroots organizing,she is a tireless advocate for survivors' rights and social justice.</p>
+        </div>
+    </div>
 <!--Footer-->
-    <footer class="mt-[3.25rem]">
+    <footer class="mt-[3.25rem] max-md:hidden">
         
     <div class="bg-[#9B06FE] text-white pt-[2rem] p-[2rem]">
         <div>
@@ -127,5 +177,64 @@
         </div>
     </div>
     </footer>
+<!--mobile footer-->
+<footer class="mt-[3.25rem] lg:hidden" >
+    <div class=" bg-[#9B06FE] text-white p-[2rem]">
+    <!--One-->  
+        <div class="flex gap-[2rem] mx-[1rem]">
+                <div>
+                    <img  class="w-[12rem] h-[3.6rem]" src="./images/logo2.svg" alt="">
+                <div class="flex space-x-[1.6rem] mt-[1rem] w-[10.1rem] h-[2.4rem]">
+                    <a href="https://web.facebook.com/webfalainitiative"><img class="w-[2rem]" src="./images/facebook.svg" alt=""></a>
+                    <a href="https://www.instagram.com/webfalainitiative/"><img class="w-[2rem]" src="./images/instagram.svg" alt=""></a>
+                     <a href="https://twitter.com/Webfalainitiat1"><img class="w-[2rem]" src="./images/twitter.svg" alt=""></a>
+                </div>
+                </div>
+           <!--help-->
+                 <div class="w-[6.4rem] h-[7.4rem] text-[#F7F9F9]">
+                    <h2 class="text-white font-semibold">Help</h2>
+                    <p class="mt-[1.25rem]">contacts</p>
+                    <p>FAQS</p>
+                    <p>Get Help</p>
+                 </div>    
+        </div>
+    <!--Two-->
+            <div class="flex justify-between mx-[1rem] mt-[1rem]">
+                <div class="w-[8.6rem] h-[5.9rem]">
+                    <h3 class="font-semibold text-[1rem] mb-[0.6rem] ">Contact</h3>
+                    <p class="text-[#F7F9F9] text-[0.9rem]"> +2348168142837 </p>
+                    <p class="text-[#F7F9F9] text-[0.9rem]"> +2348168142837  </p>
+                </div>
+            <!--Address-->
+                <div class="w-[6.4rem] h-[7.4rem]">
+                    <h3 class="font-semibold text-[1rem] mb-[0.6rem]">Address</h3>
+                        <p class="text-[#F7F9F9] w-[6.4rem] h-[7.3rem]">
+                            The city of refugee: No 14, 
+                            Station Road, Along 
+                            Royalton Hotel, GRA, Ilorin
+                        </p>
+                </div>
+            </div>
+   <!--Three-->
+        <!--address-->
+            <div>
+                <h3 class="font-semibold text-[1rem] mb-[0.6rem]"><a class="hover:text-purple-300" href="about.html">About Us </a></h3>
+                        <ul class="text-[rgb(247,249,249)]">
+                            <li>Our missions</li>
+                            <li>Team Members</li>
+                            <li>Portfolio</li>
+                            <li>Roles</li>
+                        </ul>
+            </div>
+         <!--email button-->   
+            <div class="mt-[3rem] relative">
+                <input type="email" placeholder="email@address.com" class="w-[21.5rem] h-[2.5rem] rounded-full px-6">
+                <button class="bg-[#9B06FE] absolute top-[0.2rem] right-[0] w-[8rem] h-[2rem] rounded-full ">Contact Us</button>
+            </div>
+      </div>
+</footer>
+
+
+<script src="home.js"></script>
 </body>
 </html>

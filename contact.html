@@ -3,58 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./src/output.css">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="px-[5.12rem]">
-    <div class="bg-[#9B06FE] w-[100%] h-[40rem] ">
-    <nav class="mt-[2rem] justify-evenly lg:flex hidden">
-         <img class="" src="./images/logo3.svg" alt="logo" alt="">
-        <div class="space-x-[4rem] justify-end ml-[14.4rem] py-[1.28rem]">
+<body class="lg:px-[5.12rem]">
+    <div class="bg-[#9B06FE] w-[100%] lg:h-[40rem] h-[45rem]">
+    <nav class="lg:mt-[2rem] justify-evenly lg:flex">
+         <img class="lg:w-fit w-[14.3rem]" src="./images/logo2.svg" alt="logo" alt="">
+        <div class="space-x-[4rem] justify-end ml-[14.4rem] py-[1.28rem] lg:flex hidden">
             <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="home.html">Home</a></span>
             <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE] "><a href="about.html">About Us</a></span>
             <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="support.html">Support</a></span>
         <!-- <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="#">Sign Up</a></span> -->
-            <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE] rounded-full border-3 border-[#C1C0C0]" ><a href="#">Contact Us</a></span>
+            <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE] rounded-full border-3 border-[#C1C0C0]" ><a href="contact.html">Contact Us</a></span>
         </div>
     </nav>
-            <div>
-                <h2 class="text-3xl font-bold text-center pt-[5rem] text-white">Get in Touch</h2>
-                <p class="text-2xl text-center mt-[1rem] px-[5rem] text-white">If you have any questions, suggestions, or would like to collaborate, please don't hesitate to reach out to us. We're here to listen and support you.</p>
+<!--mobile nav-->
+<div class="menu p-6 md:p-0 lg:hidden flex md:flex-row flex-col absolute md:relative top-0 left-0 bg-white md:bg-transparent md:mx-[1.5rem]">
+    <span class="font-normal text-[#9B06FE] active:text-[#9B06FE]"><a href="home.html">Home</a></span>
+    <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="about.html">About Us</a></span>
+    <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="support.html">Support</a></span>
+    <!-- <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="#">Sign Up</a></span> -->
+    <span class=""><a href="contact.html"><button class="w-[10.6rem] h-[3.12rem] bg-[#9B06FE] rounded-[5.25rem] text-white font-normal">Contact Us</button></a></span>
+</div>
+<button class="lg:hidden hamburger">
+    <img src="./images/menuicon.svg" alt="menu icon" class="menu-icon w-[2rem] h-[2rem]">
+    <img src="./images/close.svg" alt="close icon" class="close-icon hidden w-[2rem] h-[2rem]">
+</button>  
+<!--hero section-->
+            <div class="lg:mx-0 mx-[1.5rem]">
+                <h2 class="lg:text-3xl text-2xl font-bold text-center pt-[5rem] text-white">Get in Touch</h2>
+                <p class="lg:w-fit w-[20.4rem] lg:text-2xl text-xl text-center mt-[1rem] lg:px-[5rem]  text-white">If you have any questions, suggestions, or would like to collaborate, please don't hesitate to reach out to us. We're here to listen and support you.</p>
             </div>
     <!--Form-->
-    <div class=" mx-auto  bg-gray-200  h-[35rem] w-[80%] px-[3rem] py-[3rem] justify-between mt-[2rem]">
+    <div class=" mx-auto  bg-gray-200  lg:h-[35rem] h-[27rem] lg:w-[80%] w-[20.4rem] lg:py-[3rem] p-[1.5rem] lg:px-[9rem] justify-between mt-[2rem]">
         <form action="" class="grid grid-cols-2  mx-auto ">
            <div>
-            <span class="text-xl">Contact name:</span>
+            <span class="lg:text-xl text-[1rem]">Contact name:</span>
             <div>
-                <input type="Name" placeholder="Your name" class="w-[15rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
+                <input type="Name" placeholder="Your name" class="lg:w-[15rem] w-[8rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
             </div>
         </div>
         <!--email-->
              <div>  
-                <span class="text-xl">Contact email:</span>
+                <span class="lg:text-xl text-[1rem]">Contact email:</span>
                 <div> 
-                    <input type="email" placeholder="email address" class="w-[15rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
+                    <input type="email" placeholder="email address" class="lg:w-[15rem] w-[8rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
                 </div>
             </div>
          <!--Contact number-->
             <div class="pt-[1rem]">  
-                <span class="text-xl">Contact Number:</span>
+                <span class="lg:text-xl text-[1rem]">Contact Number:</span>
                 <div>  
-                    <input type="location" placeholder="phone number" class="w-[15rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
+                    <input type="location" placeholder="phone number" class="lg:w-[15rem] w-[8rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
                 </div>
             </div>
             <!--Location-->
         <div class="pt-[1rem]">
-            <span class="text-xl">Location:</span>
+            <span class="lg:text-xl text-[1rem]">Location:</span>
             <div>
-                <input type="location" placeholder="location" class="w-[15rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
+                <input type="location" placeholder="location" class="lg:w-[15rem] w-[8rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
             </div>
         </div>
         </form>
-        <div class="justify-center pt-[1rem] block">
+        <div class="justify-center pt-[1rem] block max-md:hidden">
             <!-- <input type="story" placeholder="share your story" class="grid-rows-4 rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-300"> -->
             <textarea name="story" placeholder="share your story" id="" cols="85" rows="8" class="rounded-md" ></textarea>
             <div>
@@ -62,10 +75,19 @@
             <p class="mt-[1.5rem] text-md w-[80%] ">By submitting this form you agree to allow us share your stories on your page for visitors and other survivors to read and learn from</p>    
             </div>
         </div>
+<!--mobile Share yourstory box-->
+        <div class="justify-center pt-[1rem] block lg:hidden">
+            <!-- <input type="story" placeholder="share your story" class="grid-rows-4 rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-300"> -->
+            <textarea name="story" placeholder="share your story" id="" cols="39" rows="4" class="rounded-md" ></textarea>
+            <div> 
+                <button class="w-[6.5rem]  h-[1.9rem] bg-[#9B06FE] rounded-[5.25rem] text-white">Submit</button>
+            <p class="mt-[1.5rem] text-[0.9rem]  w-[18.9rem] ">By submitting this form you agree to allow us share your stories on your page for visitors and other survivors to read and learn from</p>    
+            </div>
+        </div>
 </div>
 </div>
 <!--Info section--> 
-<div class="mt-[20rem] flex justify-between"> 
+<div class="mt-[20rem] flex justify-between max-md:hidden"> 
     <div class="w-[14.13rem] h-[14.44rem]  ">
         <img class="mx-auto" src="./images/emailicon.svg" alt="">
         <h3 class="font-bold text-center text-xl py-[0.13rem]">Email us</h3>
@@ -96,8 +118,44 @@
         <p class="text-center"><a href="info@webfalainitiative.org">info@webfalainitiative.org</a></p>
     </div>
 </div>
+<!--Info mobile-->
+<div class="mt-[9rem] flex justify-between p-[1rem] lg:hidden">
+    <div class="w-[10rem] h-[11.6rem]  ">
+        <img class="mx-auto w-[1.3rem] h-[1rem]" src="./images/emailicon.svg" alt="">
+        <h3 class="font-bold text-center text-[0.9rem] py-[0.13rem]">Email us</h3>
+        <p class="text-center h-[3.6rem] text-[0.9rem]">To send us messages for assistance, support and stories sharing</p>
+        <p class="text-center mt-[1rem] text-0.9rem"><a href="info@webfalainitiative.org">info@webfalainitiative.org</a></p>
+    </div>
+<!--Call centre-->
+    <div class="w-[10rem] h-[11.6rem] ">
+        <img class="mx-auto w-[1.3rem] h-[1rem]" src="./images/call.svg" alt="">
+        <h3 class="font-bold text-center text-[0.9rem] py-[0.13rem]">Call us</h3>
+        <p class="text-center h-[3.6rem] w-[9.7rem] text-[0.9rem]">To report cases seek advise, legal actions etc</p>
+        <p class="text-center text-[0.9rem]">+2348168142837</p>
+        <p class="text-center text-[0.9rem]">+2348160241302</p>
+    </div> 
+</div>
+<!--mobile second sec.-->
+<div class=" flex justify-between p-[0.9rem] lg:hidden">
+<!--Address-->
+    <div class="w-[10rem] h-[11.6rem]  ">
+        <img class="mx-auto w-[1.3rem] h-[1rem]" src="./images/addressicon.svg" alt="">
+        <h3 class="font-bold text-center text-[0.9rem] py-[0.13rem]">Address</h3>
+        <p class="text-center h-[3.6rem] w-[12.8rem] text-[0.9rem]">Do you want to visit us for counselling, reporting etc</p>
+        <p class="text-center text-[0.9rem] w-[12.8rem]">The city of refugee: No 14, Station Road, Along Royalton Hotel, GRA, Ilorin</p>
+    </div>
+<!--Support-->
+    <div class="w-[9.1rem] h-[13.9rem]  ">
+        <img class="mx-auto w-[1.3rem] h-[1rem]" src="./images/supporticon.svg" alt="">
+        <h3 class="font-bold text-center text-[0.9rem] py-[0.13rem]">Support</h3>
+        <p class="text-center text-[0.9rem] w-[9.1rem]">To support victims with cash, shelter, materials etc.</p>
+        <p class="text-center text-[0.9rem] w-[9.1rem]">+2348168142837</p>
+        <p class="text-center text-[0.9rem] w-[8rem]"><a href="info@webfalainitiative.org">info@webfalainitiative.org</a></p>
+    </div>
+</div>
+
 <!--Footer-->
-<footer>
+<footer class="max-md:hidden">
     
     <div class="bg-[#9B06FE] text-white pt-[2rem] p-[2rem]">
         <div>
@@ -153,6 +211,65 @@
         </div>
     </div>
 </footer>
+<!--mobile footer-->
+<footer class="mt-[3.25rem] lg:hidden" >
+    <div class=" bg-[#9B06FE] text-white p-[2rem]">
+    <!--One-->  
+        <div class="flex gap-[2rem] mx-[1rem]">
+                <div>
+                    <img  class="w-[12rem] h-[3.6rem]" src="./images/logo2.svg" alt="">
+                <div class="flex space-x-[1.6rem] mt-[1rem] w-[10.1rem] h-[2.4rem]">
+                    <a href="https://web.facebook.com/webfalainitiative"><img class="w-[2rem]" src="./images/facebook.svg" alt=""></a>
+                    <a href="https://www.instagram.com/webfalainitiative/"><img class="w-[2rem]" src="./images/instagram.svg" alt=""></a>
+                     <a href="https://twitter.com/Webfalainitiat1"><img class="w-[2rem]" src="./images/twitter.svg" alt=""></a>
+                </div>
+                </div>
+           <!--help-->
+                 <div class="w-[6.4rem] h-[7.4rem] text-[#F7F9F9]">
+                    <h2 class="text-white font-semibold">Help</h2>
+                    <p class="mt-[1.25rem]">contacts</p>
+                    <p>FAQS</p>
+                    <p>Get Help</p>
+                 </div>    
+        </div>
+    <!--Two-->
+            <div class="flex justify-between mx-[1rem] mt-[1rem]">
+                <div class="w-[8.6rem] h-[5.9rem]">
+                    <h3 class="font-semibold text-[1rem] mb-[0.6rem] ">Contact</h3>
+                    <p class="text-[#F7F9F9] text-[0.9rem]"> +2348168142837 </p>
+                    <p class="text-[#F7F9F9] text-[0.9rem]"> +2348168142837  </p>
+                </div>
+            <!--Address-->
+                <div class="w-[6.4rem] h-[7.4rem]">
+                    <h3 class="font-semibold text-[1rem] mb-[0.6rem]">Address</h3>
+                        <p class="text-[#F7F9F9] w-[6.4rem] h-[7.3rem]">
+                            The city of refugee: No 14, 
+                            Station Road, Along 
+                            Royalton Hotel, GRA, Ilorin
+                        </p>
+                </div>
+            </div>
+   <!--Three-->
+        <!--address-->
+            <div>
+                <h3 class="font-semibold text-[1rem] mb-[0.6rem]"><a class="hover:text-purple-300" href="about.html">About Us </a></h3>
+                        <ul class="text-[rgb(247,249,249)]">
+                            <li>Our missions</li>
+                            <li>Team Members</li>
+                            <li>Portfolio</li>
+                            <li>Roles</li>
+                        </ul>
+            </div>
+         <!--email button-->   
+            <div class="mt-[3rem] relative">
+                <input type="email" placeholder="email@address.com" class="w-[21.5rem] h-[2.5rem] rounded-full px-6">
+                <button class="bg-[#9B06FE] absolute top-[0.2rem] right-[0] w-[8rem] h-[2rem] rounded-full ">Contact Us</button>
+            </div>
+      </div>
+</footer>
 
+
+
+<script src="home.js"></script>
 </body>
 </html>
