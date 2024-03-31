@@ -7,10 +7,10 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="lg:px-[5.12rem]">
-    <nav class="lg:mt-[2rem] mt-[0.7rem] justify-between lg:flex">
+<body class="md:px-[3rem] w-[100%]">
+    <nav class="md:mt-[2rem] mt-[0.7rem] justify-between md:flex">
         <img class="lg:w-fit w-[14.3rem]" src="./images/logo.svg" alt="logo">
-        <div class="space-x-[8rem] justify-end py-[1.28rem] lg:flex hidden">
+        <div class="space-x-8 justify-end py-[1.28rem] md:flex flex-row hidden">
         <span class="font-normal text-[#9B06FE] active:text-[#9B06FE]"><a href="home.html">Home</a></span>
         <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="about.html">About Us</a></span>
         <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="support.html">Support</a></span>
@@ -19,151 +19,150 @@
         </div>
     </nav>
     <!-- mobile view -->
-    <div class="menu p-6 md:p-0 lg:hidden flex md:flex-row flex-col absolute md:relative top-0 left-0 bg-white md:bg-transparent md:mx-[1.5rem]">
+    <div class="menu p-6 md:hidden flex flex-col absolute top-0 left-0 bg-white">
         <span class="font-normal text-[#9B06FE] active:text-[#9B06FE]"><a href="home.html">Home</a></span>
         <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="about.html">About Us</a></span>
         <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="support.html">Support</a></span>
         <!-- <span class="font-normal text-[#C1C0C0] active:text-[#9B06FE]"><a href="#">Sign Up</a></span> -->
         <span class=""><a href="contact.html"><button class="w-[10.6rem] h-[3.12rem] bg-[#9B06FE] rounded-[5.25rem] text-white font-normal">Contact Us</button></a></span>
     </div>
-    <button class="lg:hidden hamburger">
+    <button class="md:hidden hamburger">
         <img src="./images/menuicon.svg" alt="menu icon" class="menu-icon w-[2rem] h-[2rem]">
         <img src="./images/close.svg" alt="close icon" class="close-icon hidden w-[2rem] h-[2rem]">
     </button>
 <!--hero section-->
-    <section class="lg:flex justify-between mt-[5rem] lg:space-x-[6.56rem] items-center lg:mx-0 mx-[1.5rem]" >
-        <div class="lg:w-[40.8rem] w-[19.2rem] items-center">
-            <h1 class="font-bold lg:text-4xl text-[1.5rem]">Ending Sexual and <br> Gender-Based Violence</h1>
-            <p class="lg:mt-[1.5rem] mt-[0.9rem] lg:text-xl text-[0.9rem] text-justify ">
+    <section class="flex flex-col md:flex-row md:justify-between mt-[3rem] md:items-center md:mx-0 mx-[1.5rem]" >
+        <div class="md:w-[30.2rem] w-[19.2rem] items-center">
+            <h1 class="font-bold md:text-3xl text-[1.5rem]">Ending Sexual and <br> Gender-Based Violence</h1>
+            <p class="md:mt-[1.5rem] mt-[0.9rem] md:text-xl text-[0.9rem] text-justify ">
                 Our goal is to create a digital platform dedicated to 
             raising awareness about sexual and gender-based 
             violence (SGBV) and fostering a community committed 
             to ending it. </p>
             <!-- <button class="bg-[#9B06FE] text-white w-[10.6rem] h-[3.12rem] rounded-[5.25rem] mt-[4.3rem]"><a href="#">Learn More</a></button> -->
         </div>
-        <div class="lg:mt-0 mt-[2.8rem]">
-            <img class="lg:w-[32.3rem] w-[20.4rem]" src="./images/face.svg" alt="">
+        <div class="md:mt-0 mt-[2.8rem]">
+            <img class="md:w-[32.3rem] w-[20.4rem]" src="./images/face.svg" alt="">
         </div>
     </section>
     <!--Statistics-->
-    <div class="lg:mt-[6.5rem] mt-[2.8rem] lg:mx-0 mx-[1.5rem]">
+    <div class="md:mt-[6.5rem] mt-[2.8rem] md:mx-0 mx-[1.5rem]">
         <div>
-            <h2 class="font-bold lg:text-4xl text-xl lg:text-center text-start">Statistics and facts about Sexual and Gender Based Violence</h2>
+            <h2 class="font-bold md:text-3xl text-xl md:text-center">Statistics and facts about Sexual and Gender Based Violence</h2>
         </div>
         
         <div>
-            <p class="lg:mt-[1.5rem] mt-[0.9rem] lg:text-2xl text-[0.9rem] lg:text-center text-start">Sexual and Gender-Based Violence (SGBV) is a pervasive 
+            <p class="md:mt-[1.5rem] mt-[0.9rem] md:text-2xl text-[0.9rem] md:text-center">Sexual and Gender-Based Violence (SGBV) is a pervasive 
                 and complex issue with far-reaching consequences for individuals, families, communities, and societies. 
                 Here are some statistics and facts about SGBV</p>
         </div>
     </div>
     <!--Effect of SGBV-->
-    <section class="lg:flex lg:space-x-[1rem] lg:mt-[5rem] mt-[2.8rem] justify-center lg:mx-0 mx-[1.5rem]">
-        <div class="bg-[#D9D9D9] rounded-[0.93rem] lg:w-[20rem] w-[20.8rem]">
+    <section class="md:flex md:space-x-[1rem] md:mt-[5rem] mt-[2.8rem] justify-center md:mx-0 mx-[1.5rem]">
+        <div class="bg-[#D9D9D9] rounded-[0.93rem] md:w-[20rem] w-[18rem]">
             <img class="" src="./images/report.svg" alt="stigma">
             <h2 class="font-bold text-center pt-[1rem]">Underreporting and Stigma</h2>
-            <p class="text-[0.7rem] p-[1.5rem] text-center">SGBV is vastly underreported globally, with many survivors hesitant to disclose their experiences due to fear of stigma, shame, or retaliation. </p>
+            <p class="text-[0.7rem] p-[1rem] text-center">SGBV is vastly underreported globally, with many survivors hesitant to disclose their experiences due to fear of stigma, shame, or retaliation. </p>
         </div>
 
-        <div class="bg-[#D9D9D9] rounded-[0.93rem] lg:w-[20rem] w-[20.8rem] lg:mt-0 mt-[2.8rem]">
+        <div class="bg-[#D9D9D9] rounded-[0.93rem] md:w-[20rem] w-[18rem] md:mt-0 mt-[2.8rem]">
             <img class="" src="./images/health.svg" alt="health impediment">
             <h2 class="font-bold text-center pt-[1rem]">Impact on Health</h2>
-            <p class="text-[0.7rem] p-[1.5rem] ">Survivors of SGBV often face both immediate and long-term physical, psychological, and social consequences. Physical injuries, sexually transmitted infections (STIs), </p>      
+            <p class="text-[0.7rem] p-[1rem] ">Survivors of SGBV often face both immediate and long-term physical, psychological, and social consequences. Physical injuries, sexually transmitted infections (STIs), </p>      
         </div>
 
-        <div class="bg-[#D9D9D9] rounded-[0.93rem] lg:w-[20rem] w-[20.8rem] lg:mt-0 mt-[2.8rem]">
+        <div class="bg-[#D9D9D9] rounded-[0.93rem] md:w-[20rem] w-[18rem] md:mt-0 mt-[2.8rem]">
             <img class="" src="./images/economicImpact.svg" alt="economic impact">
             <h2 class="font-bold text-center pt-[1rem]">Economic Impact</h2>
-            <p class="text-[0.7rem] p-[1.5rem] ">SGBV can have severe economic consequences for survivors, including loss of income, reduced productivity, and increased healthcare costs. </p>
+            <p class="text-[0.7rem] p-[1rem] ">SGBV can have severe economic consequences for survivors, including loss of income, reduced productivity, and increased healthcare costs. </p>
         
         </div>
     </section>
 
     <!--Effect of SVGB 2-->
-    <section class="lg:flex lg:space-x-[1rem] lg:mt-[2.06rem] mt-[2.8rem] justify-center lg:mx-0 mx-[1.5rem]">
-        <div class="bg-[#D9D9D9] rounded-[0.93rem] lg:w-[20rem] w-[20.8rem]">
+    <section class="md:flex md:space-x-[1rem] md:mt-[2.06rem] mt-[2.8rem] justify-center md:mx-0 mx-[1.5rem]">
+        <div class="bg-[#D9D9D9] rounded-[0.93rem] md:w-[20rem] w-[18rem]">
             <img class="" src="./images/prevelance.svg" alt=" violence scene">
             <h2 class="font-bold text-center pt-[1rem]">Prevalence</h2>
-            <p class="text-[0.7rem] p-[1.5rem]">According to the World Health Organization (WHO), globally, about 1 in 3 women have experienced either physical and/or sexual intimate partner violence or non-partner sexual violence in their lifetime. </p>
+            <p class="text-[0.7rem] p-[1rem]">According to the World Health Organization (WHO), globally, about 1 in 3 women have experienced either physical and/or sexual intimate partner violence or non-partner sexual violence in their lifetime. </p>
         </div>
 
-        <div class="bg-[#D9D9D9] rounded-[0.93rem] lg:w-[20rem] w-[20.8rem] lg:mt-0 mt-[2.8rem]">
+        <div class="bg-[#D9D9D9] rounded-[0.93rem] md:w-[20rem] w-[18rem] md:mt-0 mt-[2.8rem]">
             <img class="" src="./images/childmarriage.svg" alt="child subjected to early marriage">
             <h2 class="font-bold text-center pt-[1rem]">Child Marriage and SGBV</h2>
-            <p class="text-[0.7rem] p-[1.5rem] ">Child marriage is a form of SGBV, and globally, around 12 million girls are married before the age of 18 each year, putting them at risk of various forms of violence. </p>      
+            <p class="text-[0.7rem] p-[1rem] ">Child marriage is a form of SGBV, and globally, around 12 million girls are married before the age of 18 each year, putting them at risk of various forms of violence. </p>      
         </div>
 
-        <div class="bg-[#D9D9D9] rounded-[0.93rem] lg:w-[20rem] w-[20.8rem] lg:mt-0 mt-[2.8rem]">
+        <div class="bg-[#D9D9D9] rounded-[0.93rem] md:w-[20rem] w-[18rem] md:mt-0 mt-[2.8rem]">
             <img class="" src="./images/educationimpact.svg" alt="girls drop out from school">
             <h2 class="font-bold text-center pt-[1rem]">Impact on Education</h2>
-            <p class="text-[0.7rem] p-[1.5rem] ">SGBV can significantly hinder access to education. Girls who experience violence may be forced to drop out of school, perpetuating cycles of poverty and inequality.  </p>
+            <p class="text-[0.7rem] p-[1rem] ">SGBV can significantly hinder access to education. Girls who experience violence may be forced to drop out of school, perpetuating cycles of poverty and inequality.  </p>
         </div>
     </section>
 
 
     <!-- share survivor stories-->
-<section class="lg:flex lg:mt-[5.25rem] mt-[4rem] justify-between lg:items-center lg:mx-0 mx-[1.5rem]">
-    <div class="lg:w-[32.3rem] w-[20.5rem]">
-         <h2 class="font-bold lg:text-3xl text-2xl text-justify">Survivors Stories</h2>
-         <p class="lg:mt-[1rem] lg:text-2xl text-[0.9rem]">By sharing these testimonies, we want to make the voice of these survivors of gender-based violence heard. </p>
-         <button class="lg:block hidden bg-[#9B06FE] text-white w-[10.6rem] h-[3.12rem] rounded-[5.25rem] mt-[3rem]"><a href="contact.html">Share your stories</a></button>
+<section class="md:flex md:mt-[5.25rem] mt-[4rem] justify-between md:items-center md:mx-0 mx-[1.5rem]">
+    <div class="md:w-[32.3rem] w-[20.5rem]">
+         <h2 class="font-bold md:text-3xl text-2xl text-justify">Survivors Stories</h2>
+         <p class="md:mt-[1rem] md:text-2xl text-[0.9rem]">By sharing these testimonies, we want to make the voice of these survivors of gender-based violence heard. </p>
+         <button class="md:block hidden bg-[#9B06FE] text-white w-[10.6rem] h-[3.12rem] rounded-[5.25rem] mt-[3rem]"><a href="contact.html">Share your stories</a></button>
         </div>
 
-    <div class=" lg:w-[32.3rem] w-[20.4rem] lg:mt-0 mt-[1.8rem]">
+    <div class=" md:w-[32.3rem] w-[18rem] md:mt-0 mt-[1.8rem]">
         <img src="./images/survivor.svg" alt="survivor picture">
     </div>
 </section>
         <!--Survivor stories-->
-<div class="lg:flex lg:mt-[3.25rem] mt-[2.8rem] mb-[3.25rem] lg:space-x-4 lg:mx-0 mx-[1.5rem]">
+<div class="md:flex md:mt-[3.25rem] mt-[2.8rem] mb-[3.25rem] md:space-x-4 md:mx-0 mx-[1.5rem]">
     
     <div class="bg-[#F7F9F9] rounded-[0.9rem] p-[0.9rem]">
-        <img src="./images/Aisha.svg" alt="" class="lg:w-[8.1rem] w-[6rem]">
-        <p class="lg:text-[1rem] text-[0.9rem]">I was just a teenager when I was forced into marriage by my parents, with me enduring 
+        <img src="./images/Aisha.svg" alt="" class="md:w-[10rem] w-[6rem]">
+        <p class="md:text-[1rem] text-[0.9rem]">I was just a teenager when I was forced into marriage by my parents, with me enduring 
             physical and emotional violence at the hands of my husband. 
             Despite the immense challenges, I refused to accept my situation as my fate. I escaped 
             the abusive marriage and began rebuilding my life. </p>
     </div>
 
-    <div class="bg-[#F7F9F9] rounded-[0.9rem] lg:mt-[0] mt-[1.8rem] p-[0.9rem]">
-        <img src="./images/sarah.svg" alt="" class="lg:w-[8.1rem] w-[6rem]">
-        <p class="lg:text-[1rem] text-[0.9rem]">I was sexually assaulted by a classmate at a party. Struggling with shame and fear, 
+    <div class="bg-[#F7F9F9] rounded-[0.9rem] md:mt-[0] mt-[1.8rem] p-[0.9rem]">
+        <img src="./images/sarah.svg" alt="" class="md:w-[10rem] w-[6rem]">
+        <p class="md:text-[1rem] text-[0.9rem]">I was sexually assaulted by a classmate at a party. Struggling with shame and fear, 
             I initially kept silent about the assault, but the trauma haunted me every day. Eventually, 
             with the support of a counselor and a close friend, I found the courage to report 
             the assault and seek justice </p>
     </div>
 
-    <div class="bg-[#F7F9F9] rounded-[0.9rem] lg:mt-[0] mt-[1.8rem] p-[0.9rem]">
-        <img src="./images/maria.svg" alt="" class="lg:w-[8.1rem] w-[6rem]" >
-        <p class="lg:text-[1rem] text-[0.9rem]">When I got married, I found myself trapped in a cycle of abuse, enduring physical and emotional violence from my husband. 
+    <div class="bg-[#F7F9F9] rounded-[0.9rem] md:mt-[0] mt-[1.8rem] p-[0.9rem]">
+        <img src="./images/maria.svg" alt="" class="md:w-[10rem] w-[6rem]" >
+        <p class="md:text-[1rem] text-[0.9rem]">When I got married, I found myself trapped in a cycle of abuse, enduring physical and emotional violence from my husband. 
             It took years for me to recognize that I deserved better and to find the strength to leave the abusive relationship.</p>
     </div>
 </div>
 <!--Footer-->
-<footer class="mt-[3.25rem] max-md:hidden">
-    <div class=" bg-[#9B06FE] text-white pt-[2rem] p-[2rem]">
-        <div class="">
-            <div class="flex  gap-[7rem] mx-[3rem]">
-                <div class="">
-                    <img  src="./images/logo2.svg" alt="">
-                <div class="flex space-x-[1.6rem] mt-[2rem] w-[14.75rem]">
+<footer class="mt-[3.25rem]">
+    <div class=" bg-[#9B06FE] text-white pt-[2rem] md:p-[4rem] p-[3rem] ">
+       <div class="grid grid-cols-2 md:grid-cols-4 md:gap-[3rem] gap-[4rem]">       
+            <div>
+                    <img class="w-[15rem] md:w-[fit] h-[3.6rem] md:h-[fit]"  src="./images/logo2.svg" alt="">
+                <div class="flex space-x-[1rem] mt-[1rem] md:w-[14.75rem] w-[8rem]">
                     <a href="https://web.facebook.com/webfalainitiative"><img class="w-[2rem]" src="./images/facebook.svg" alt=""></a>
                     <a href="https://www.instagram.com/webfalainitiative/"><img class="w-[2rem]" src="./images/instagram.svg" alt=""></a>
                      <a href="https://twitter.com/Webfalainitiat1"><img class="w-[2rem]" src="./images/twitter.svg" alt=""></a>
                 </div>
-                </div>
+            </div>
                 <!-- TWO -->
-                    <div class="">
+                    <div class="w-[8.6rem] md:w-[fit] h-[5.9rem] md:h-[fit]">
                         <h3 class="font-semibold text-[1rem] mb-[0.6rem] ">Contact</h3>
-                        <p class="text-[#F7F9F9]"> +2348168142837 </p>
-                        <p class="text-[#F7F9F9]"> +2348168142837  <p>
-                            <div class="mt-[2.4rem]  text-[#F7F9F9]">
+                        <p class="text-[#F7F9F9] text-[0.9rem]"> +2348168142837 </p>
+                        <p class="text-[#F7F9F9] text-[0.9rem]"> +2348168142837  <p>
+                            <div class="md:mt-[2.4rem] mt-[1rem] text-[0.9rem] w-[6.4rem] md:w-[fit] h-[7.4rem] md:[fit] text-[#F7F9F9]">
                                 <!-- <p>Contacts</p> -->
                                 <p>FAQS</p>
                                 <p>Get Help</p>
                             </div>
                     </div>
                     <!-- THREE -->
-                    <div class="">
+                    <div class="mt-3 md:mt-0">
                         <h3 class="font-semibold text-[1rem] mb-[0.6rem]"><a class="hover:text-purple-300" href="about.html">About Us </a></h3>
                         <ul class="text-[rgb(247,249,249)]">
                             <li>Our missions</li>
@@ -177,80 +176,25 @@
                     <!-- FOUR -->
                         
                     <div>
-                        <h3 class="font-semibold text-[1rem] mb-[0.6rem]">Address</h3>
+                        <h3 class="font-semibold text-[1rem] mb-[0.6rem] mt-3 md:mt-0">Address</h3>
                         <Address class="text-[#F7F9F9]">
                             The city of refugee: No 14, 
                             <br>Station Road, Along 
                             <br>Royalton Hotel, GRA, Ilorin
                         </Address>
                     </div>
+
+                    
             </div>
 
-            <div class="lg:ml-[45rem] ml-[0] relative">
-                <input type="email" placeholder="email@address.com" class="w-[22rem] h-[2.94rem] rounded-full px-6">
-                <button class="bg-[#9B06FE] absolute top-[0.2rem] right-[3.5rem] w-[9rem] h-[2.5rem] rounded-full ">Contact Us</button>
-            </div>
+            <form class="flex flex-row float-right relative mt-3">
+                <input type="email" placeholder="email@address.com" class="md:w-[20rem] w-[17rem] h-[2.94rem] rounded-full px-4">
+                <button class="bg-[#9B06FE] top-[0.2rem] right-[0.5rem] absolute w-[9rem] h-[2.5rem] rounded-full ">Contact Us</button>
+            </form>
 
         </div>
     </div>     
 </footer>
-<!--mobile footer-->
-<footer class="mt-[3.25rem] lg:hidden" >
-    <div class=" bg-[#9B06FE] text-white p-[2rem]">
-    <!--One-->  
-        <div class="flex gap-[2rem]">
-                <div>
-                    <img  class="w-[12rem] h-[3.6rem]" src="./images/logo2.svg" alt="">
-                <div class="flex space-x-[1.6rem] mt-[1rem] w-[10.1rem] h-[2.4rem]">
-                    <a href="https://web.facebook.com/webfalainitiative"><img class="w-[2rem]" src="./images/facebook.svg" alt=""></a>
-                    <a href="https://www.instagram.com/webfalainitiative/"><img class="w-[2rem]" src="./images/instagram.svg" alt=""></a>
-                     <a href="https://twitter.com/Webfalainitiat1"><img class="w-[2rem]" src="./images/twitter.svg" alt=""></a>
-                </div>
-                </div>
-           <!--help-->
-                 <div class="w-[6.4rem] h-[7.4rem] text-[#F7F9F9]">
-                    <h2 class="text-white font-semibold">Help</h2>
-                    <p class="mt-[1.25rem]">contacts</p>
-                    <p>FAQS</p>
-                    <p>Get Help</p>
-                 </div>    
-        </div>
-    <!--Two-->
-            <div class="flex justify-between  mt-[1rem]">
-                <div class="w-[8.6rem] h-[5.9rem]">
-                    <h3 class="font-semibold text-[1rem] mb-[0.6rem] ">Contact</h3>
-                    <p class="text-[#F7F9F9] text-[0.9rem]"> +2348168142837 </p>
-                    <p class="text-[#F7F9F9] text-[0.9rem]"> +2348168142837  </p>
-                </div>
-            <!--Address-->
-                <div class="w-[6.4rem] h-[7.4rem]">
-                    <h3 class="font-semibold text-[1rem] mb-[0.6rem]">Address</h3>
-                        <p class="text-[#F7F9F9] w-[6.4rem] h-[7.3rem]">
-                            The city of refugee: No 14, 
-                            Station Road, Along 
-                            Royalton Hotel, GRA, Ilorin
-                        </p>
-                </div>
-            </div>
-   <!--Three-->
-        <!--address-->
-            <div>
-                <h3 class="font-semibold text-[1rem] mb-[0.6rem]"><a class="hover:text-purple-300" href="about.html">About Us </a></h3>
-                        <ul class="text-[rgb(247,249,249)]">
-                            <li>Our missions</li>
-                            <li>Team Members</li>
-                            <li>Portfolio</li>
-                            <li>Roles</li>
-                        </ul>
-            </div>
-         <!--email button-->   
-            <div class="mt-[3rem] relative">
-                <input type="email" placeholder="email@address.com" class="w-[18rem] h-[2.5rem] rounded-full px-6">
-                <button class="bg-[#9B06FE] absolute top-[0.2rem] right-[1rem] w-[9rem] h-[2rem] rounded-full ">Contact Us</button>
-            </div>
-      </div>
-</footer>
-
 <script src="./home.js"></script>
 </body>
 </html>
