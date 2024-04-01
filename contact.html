@@ -7,7 +7,7 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="md:px-[5.12rem]">
+<body class="md:px-[3rem]">
     <div class="bg-[#9B06FE] w-[100%] md:h-[40rem] h-[45rem]">
     <nav class="md:mt-[2rem] justify-evenly md:flex">
          <img class="md:w-fit w-[14.3rem]" src="./images/logo2.svg" alt="logo" alt="">
@@ -32,38 +32,38 @@
     <img src="./images/close.svg" alt="close icon" class="close-icon hidden w-[2rem] h-[2rem]">
 </button>  
 <!--hero section-->
-            <div class="md:mx-0 mx-[1.5rem]">
-                <h2 class="md:text-3xl text-2xl font-bold text-center pt-[5rem] text-white">Get in Touch</h2>
-                <p class="md:w-fit w-[20.4rem] md:text-2xl text-xl text-center mt-[1rem] md:px-[5rem]  text-white">If you have any questions, suggestions, or would like to collaborate, please don't hesitate to reach out to us. We're here to listen and support you.</p>
+            <div class="md:mx-0 mx-[1.5rem] ">
+                <h2 class="md:text-3xl text-2xl font-bold text-center pt-[5rem] mx-auto text-white">Get in Touch</h2>
+                <p class="md:w-fit w-[20.4rem] md:text-2xl text-xl text-center mx-auto mt-[1rem] md:px-[5rem]  text-white">If you have any questions, suggestions, or would like to collaborate, please don't hesitate to reach out to us. We're here to listen and support you.</p>
             </div>
     <!--Form-->
-    <div class=" mx-auto  bg-gray-200  lg:h-[35rem] h-[27rem] lg:w-[80%] w-[20.4rem] lg:py-[3rem] p-[1.5rem] lg:px-[9rem] justify-between mt-[2rem]">
-        <form action="" class="grid grid-cols-2  mx-auto ">
+    <div class=" mx-auto lg:mx-auto md:mx-15  bg-gray-200  md:h-[35rem] h-[27rem] md:w-[80%] w-[20.4rem] md:py-[3rem] p-[1.5rem] xl:px-[9rem] justify-between mt-[2rem]">
+        <form action="" class="grid grid-cols-2 mx-auto md:gap-4  ">
            <div>
-            <span class="lg:text-xl text-[1rem]">Contact name:</span>
+            <span class="md:text-xl text-[1rem]">Contact name:</span>
             <div>
-                <input type="Name" placeholder="Your name" class="lg:w-[15rem] w-[8rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
+                <input type="Name" placeholder="Your name" class="md:w-[15rem] w-[8rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
             </div>
         </div>
         <!--email-->
              <div>  
-                <span class="lg:text-xl text-[1rem]">Contact email:</span>
+                <span class="md:text-xl text-[1rem]">Contact email:</span>
                 <div> 
-                    <input type="email" placeholder="email address" class="lg:w-[15rem] w-[8rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
+                    <input type="email" placeholder="email address" class="md:w-[15rem] w-[8rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
                 </div>
             </div>
          <!--Contact number-->
             <div class="pt-[1rem]">  
-                <span class="lg:text-xl text-[1rem]">Contact Number:</span>
+                <span class="md:text-xl text-[1rem]">Contact Number:</span>
                 <div>  
-                    <input type="location" placeholder="phone number" class="lg:w-[15rem] w-[8rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
+                    <input type="location" placeholder="phone number" class="md:w-[15rem] w-[8rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
                 </div>
             </div>
             <!--Location-->
         <div class="pt-[1rem]">
-            <span class="lg:text-xl text-[1rem]">Location:</span>
+            <span class="md:text-xl text-[1rem]">Location:</span>
             <div>
-                <input type="location" placeholder="location" class="lg:w-[15rem] w-[8rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
+                <input type="location" placeholder="location" class="md:w-[15rem] w-[8rem] rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-[#9B06FE]">
             </div>
         </div>
         </form>
@@ -71,88 +71,54 @@
             <!-- <input type="story" placeholder="share your story" class="grid-rows-4 rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-300"> -->
             <textarea name="story" placeholder="share your story" id="" cols="85" rows="8" class="rounded-md" ></textarea>
             <div>
-                <button class="w-[10.6rem] h-[3.12rem] bg-[#9B06FE] rounded-[5.25rem] text-white">Submit</button>
+                <button type="submit"  class="w-[10.6rem] h-[3.12rem] bg-[#9B06FE] rounded-[5.25rem] text-white">Submit</button>
             <p class="mt-[1.5rem] text-md w-[80%] ">By submitting this form you agree to allow us share your stories on your page for visitors and other survivors to read and learn from</p>    
             </div>
         </div>
 <!--mobile Share yourstory box-->
-        <div class="mx-auto pt-[1rem] block lg:hidden">
+        <div class="mx-auto pt-[1rem] block md:hidden">
             <!-- <input type="story" placeholder="share your story" class="grid-rows-4 rounded-md px-2 py-1 ring-1 focus:ring-2 focus:ring-purple-300"> -->
             <textarea name="story" placeholder="share your story" id="" cols="35" rows="4" class="rounded-md" ></textarea>
             <div> 
-                <button class="w-[6.5rem]  h-[1.9rem] bg-[#9B06FE] rounded-[5.25rem] text-white">Submit</button>
+                <button type="" class="w-[6.5rem]  h-[1.9rem] bg-[#9B06FE] rounded-[5.25rem] text-white">Submit</button>
             <p class="mt-[1.5rem] text-[0.9rem]  w-[18.9rem] ">By submitting this form you agree to allow us share your stories on your page for visitors and other survivors to read and learn from</p>    
             </div>
         </div>
 </div>
 </div>
 <!--Info section--> 
-<div class="mt-[20rem] flex justify-between max-md:hidden"> 
-    <div class="w-[14.13rem] h-[14.44rem]  ">
-        <img class="mx-auto" src="./images/emailicon.svg" alt="">
-        <h3 class="font-bold text-center text-xl py-[0.13rem]">Email us</h3>
-        <p class="text-center">To send us messages for assistance, support and stories sharing</p>
-        <p class="text-center"><a href="info@webfalainitiative.org">info@webfalainitiative.org</a></p>
+<div class=" mt-[10rem] md:mt-[20rem] grid grid-cols-2 lg:grid-cols-4 lg:justify-between gap-4 "> 
+    <div class="md:w-[14.13rem] md:h-[14.44rem] w-[10rem] h-[11.6rem]  ">
+        <img class="mx-auto w-[1.3rem] md:w-[fit] h-[1rem] md:h-[fit]" src="./images/emailicon.svg" alt="">
+        <h3 class="font-bold text-center text-[0.9rem] md:text-xl py-[0.13rem]">Email us</h3>
+        <p class="text-center text-[0.9rem] md:text-[fit]">To send us messages for assistance, support and stories sharing</p>
+        <p class="text-center text-[0.9rem] md:text-[fit]"><a href="info@webfalainitiative.org">info@webfalainitiative.org</a></p>
     </div>
 <!--Call centre-->
-    <div class="w-[14.13rem] h-[14.44rem] ">
-        <img class="mx-auto" src="./images/call.svg" alt="">
-        <h3 class="font-bold text-center text-xl py-[0.13rem]">Call us</h3>
-        <p class="text-center">To report cases seek advise, legal actions etc</p>
-        <p class="text-center">+2348168142837</p>
-        <p class="text-center">+2348160241302</p>
+    <div class="md:w-[14.13rem] md:h-[14.44rem] w-[10rem] h-[11.6rem]  ">
+        <img class="mx-auto w-[1.3rem] md:w-[fit] h-[1rem] md:h-[fit]" src="./images/call.svg" alt="">
+        <h3 class="font-bold text-center text-[0.9rem] md:text-xl  py-[0.13rem]">Call us</h3>
+        <p class="text-center  text-[0.9rem] md:text-[fit]">To report cases seek advise, legal actions etc</p>
+        <p class="text-center  text-[0.9rem] md:text-[fit]">+2348168142837</p>
+        <p class="text-center  text-[0.9rem] md:text-[fit]">+2348160241302</p>
     </div> 
 <!--Address-->
-    <div class="w-[14.13rem] h-[14.44rem]  ">
-        <img class="mx-auto" src="./images/addressicon.svg" alt="">
-        <h3 class="font-bold text-center text-xl py-[0.13rem]">Address</h3>
-        <p class="text-center">Do you want to visit us for counselling, reporting etc</p>
-        <p class="text-center">The city of refugee: No 14, Station Road, Along Royalton Hotel, GRA, Ilorin</p>
+    <div class="md:w-[14.13rem] md:h-[14.44rem] w-[10rem] h-[11.6rem]  ">
+        <img class="mx-auto w-[1.3rem] md:w-[fit] h-[1rem] md:h-[fit] " src="./images/addressicon.svg" alt="">
+        <h3 class="font-bold text-center md:text-xl text-[0.9rem] py-[0.13rem]">Address</h3>
+        <p class="text-center  text-[0.9rem] md:text-[fit]">Do you want to visit us for counselling, reporting etc</p>
+        <p class="text-center  text-[0.9rem] md:text-[fit]">The city of refugee: No 14, Station Road, Along Royalton Hotel, GRA, Ilorin</p>
     </div>
 <!--Support-->
-    <div class="w-[14.13rem] h-[14.44rem]  ">
-        <img class="mx-auto" src="./images/supporticon.svg" alt="">
-        <h3 class="font-bold text-center text-xl py-[0.13rem]">Support</h3>
-        <p class="text-center">To support victims with cash, shelter, materials etc.</p>
-        <p class="text-center">+2348168142837</p>
-        <p class="text-center"><a href="info@webfalainitiative.org">info@webfalainitiative.org</a></p>
+    <div class="md:w-[14.13rem] md:h-[14.44rem] w-[10rem] h-[11.6rem]  ">
+        <img class="mx-auto w-[1.3rem] md:w-[fit] h-[1rem] md:h-[fit]" src="./images/supporticon.svg" alt="">
+        <h3 class="font-bold text-center text-[0.9rem] md:text-xl py-[0.13rem] ">Support</h3>
+        <p class="text-center  text-[0.9rem] md:text-[fit]">To support victims with cash, shelter, materials etc.</p>
+        <p class="text-center  text-[0.9rem] md:text-[fit]">+2348168142837</p>
+        <p class="text-center  text-[0.9rem] md:text-[fit]"><a href="info@webfalainitiative.org">info@webfalainitiative.org</a></p>
     </div>
 </div>
-<!--Info mobile-->
-<div class="mt-[9rem] flex gap-[2rem] p-[1rem] lg:hidden">
-    <div class="w-[10rem] h-[11.6rem]  ">
-        <img class="mx-auto w-[1.3rem] h-[1rem]" src="./images/emailicon.svg" alt="">
-        <h3 class="font-bold text-center text-[0.9rem] py-[0.13rem]">Email us</h3>
-        <p class="text-center h-[3.6rem] text-[0.9rem]">To send us messages for assistance, support and stories sharing</p>
-        <p class="text-center mt-[1rem] text-0.9rem"><a href="info@webfalainitiative.org">info@webfalainitiative.org</a></p>
-    </div>
-<!--Call centre-->
-    <div class="w-[10rem] h-[11.6rem] ">
-        <img class="mx-auto w-[1.3rem] h-[1rem]" src="./images/call.svg" alt="">
-        <h3 class="font-bold text-center text-[0.9rem] py-[0.13rem]">Call us</h3>
-        <p class="text-center h-[3.6rem] w-[9.7rem] text-[0.9rem]">To report cases seek advise, legal actions etc</p>
-        <p class="text-center text-[0.9rem]">+2348168142837</p>
-        <p class="text-center text-[0.9rem]">+2348160241302</p>
-    </div> 
-</div>
-<!--mobile second sec.-->
-<div class=" flex gap-[3rem] p-[0.9rem] lg:hidden">
-<!--Address-->
-    <div class="w-[10rem] h-[11.6rem]  ">
-        <img class="mx-auto w-[1.3rem] h-[1rem]" src="./images/addressicon.svg" alt="">
-        <h3 class="font-bold text-center text-[0.9rem] py-[0.13rem]">Address</h3>
-        <p class="text-center h-[3.6rem] w-[12.8rem] text-[0.9rem]">Do you want to visit us for counselling, reporting etc</p>
-        <p class="text-center text-[0.9rem] w-[12.8rem]">The city of refugee: No 14, Station Road, Along Royalton Hotel, GRA, Ilorin</p>
-    </div>
-<!--Support-->
-    <div class="w-[9.1rem] h-[13.9rem]  ">
-        <img class="mx-auto w-[1.3rem] h-[1rem]" src="./images/supporticon.svg" alt="">
-        <h3 class="font-bold text-center text-[0.9rem] py-[0.13rem]">Support</h3>
-        <p class="text-center text-[0.9rem] w-[9.1rem]">To support victims with cash, shelter, materials etc.</p>
-        <p class="text-center text-[0.9rem] w-[9.1rem]">+2348168142837</p>
-        <p class="text-center text-[0.9rem] w-[8rem]"><a href="info@webfalainitiative.org">info@webfalainitiative.org</a></p>
-    </div>
-</div>
+
 
 <!--Footer-->
 <footer class="mt-[3.25rem]">
